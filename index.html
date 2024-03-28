@@ -4,12 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dice Game</title>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-fireworks@1.0.4/stylesheets/github-light.min.css"> -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
+  <style>
+    body{
+      background-image: url(./Public/DiceImageback.jpg);
+      /* background-repeat: no-repeat; */
+       /* background-size:cover;  */
+       background-position: center; 
+       height: 100vh;
+    }
+
+  </style>
+</head>
 <body>
+ 
   <div class="container">
      <div class="row"><h4 class="title">Lets play Dice</h4></div>
-     <div class="row"><div class="player-info"><h2><span class="player-num">Player-1 To Play</span></h2></div>
+     <div class="row"><div class="player-info"><h2><span class="player-num"></span></h2></div>
      </div>
      <div class="row">
         <div class="game-panel">
@@ -18,7 +31,7 @@
           <div class="score" id="player-1-score">0</div>
           <input type="button" class="roll-btn disabled" value="Roll Now"  id="Player-1-btn" disabled/>
         </div>
-        <div class="dice" ><img src="./Public/Dice-1.png" alt="" id="dice-img"></div>
+        <div class="dice" ><img src="./Public/Dice-1.jpeg" alt="" id="dice-img"></div>
         <div class="players">
           <h3>Player-2</h3>
           <div class="score" id="player-2-score">0</div>
@@ -29,8 +42,12 @@
      <div class="row">
       <input type="button" class="reset-btn" value="Reset" disabled>
      </div>
+     <div class="text-success" id="Result"></div>
   </div>
   <script src="./js/script.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-fireworks@1.0.4/jquery.fireworks.min.js"></script> -->
+
   
 </body>
 </html>
